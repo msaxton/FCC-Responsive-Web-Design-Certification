@@ -1,0 +1,72 @@
+body {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+hr {
+	border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.container {
+	background-color: #f0f0f0;
+	width: 90%;
+	padding: 15px;
+	margin: auto;
+}
+#content {
+	width: 60%;
+	margin: auto;
+}
+#quote{
+	font-style: italic;
+	padding: 10px;
+}
+#tag-line {
+	text-align: center;
+	margin-top: 0px;
+}
+#img-div {
+	background-color: #fff;
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+#img-caption {
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	margin: auto;
+	font-size: 0.8em;
+}
+#timeline-title{
+	text-align: center;
+}
+#quote-source {
+	text-align: right;
+	padding: 10px;
+}
+#quote-box {
+	background-color: #fff;
+	width: 90%;
+	margin: auto;
+}
+#wiki {
+	width: 90%;
+	margin: auto;
+}
