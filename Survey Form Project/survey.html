@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading Survey</title>
+</head>
+<body>
+	<h1 id="title">Reading Survey</h1>
+	<p id="description">Please share a little about your reading preferences.</p>
+	<form id="survey-form">
+		<div>
+			<!-- name -->
+			<label for="name">Name: </label>
+			<input type="text" name="name" placeholder="Jane">
+			<br>
+			<!-- email -->
+			<label for="email">Email: </label>
+			<input type="email" name="email" placeholder="jane@example.com">
+			<br>
+			<!-- age/number -->
+			<label for="age">Age: </label>
+			<input type="number" name="age" placeholder="30">
+			<br>
+		</div>
+
+		<div>
+			<!-- dropdown -->
+			<label for="hours">How many hours a week do you read?</label>
+			<select name="hours">
+				<option value="">Please choose one</option>
+				<option value="0-1">Less than 1 hour</option>
+				<option value="2-5">2-4 hours</option>
+				<option value="6-10">6-10 hours</option>
+				<option value="10+">More than 10 hours</option>
+			</select>
+		</div>
+
+		<div>
+			<!-- radio -->
+			<label for="gender">What gender do you identify with?</label><br>
+			<input type="radio" name="gender"> female <br>
+			<input type="radio" name="gender"> male <br>
+			<input type="radio" name="gender"> other <br>
+			<input type="radio" name="gender"> prefer not to say
+		</div>
+
+		<div>
+			<!-- checkbox -->
+			<label>What genres do you like to read?</label><br>
+			<input type="checkbox" name="genre1" value="fiction"> Fiction<br>
+			<input type="checkbox" name="genre2" value="self-help"> Self Help<br>
+			<input type="checkbox" name="genre3" value="history"> History<br>
+			<input type="checkbox" name="genre4" value="graphic-novel"> Graphic Novels<br>
+			<input type="checkbox" name="genre5" value="children's"> Children's Books<br>
+		</div>
+
+		<div>
+		<!-- textarea -->
+			<label for="comments">Do you have any other comments?</label>
+			<br>
+			<textarea id="comments" rows="4" cols="50"></textarea>
+		</div>
+
+		<!-- submit -->
+		<input type="submit" name="submit">
+	</form>
+
+</body>
+</html>
