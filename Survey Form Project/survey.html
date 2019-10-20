@@ -9,26 +9,26 @@
 	<form id="survey-form">
 		<div>
 			<!-- name -->
-			<label for="name">Name: </label>
-			<input type="text" name="name" placeholder="Jane">
+			<label id="name-label" for="name">Name: </label>
+			<input id="name" type="text" name="name" placeholder="Jane" required>
 			<br>
 			<!-- email -->
-			<label for="email">Email: </label>
-			<input type="email" name="email" placeholder="jane@example.com">
+			<label id="email-label" for="email">Email: </label>
+			<input id="email" type="email" name="email" placeholder="jane@example.com" required>
 			<br>
 			<!-- age/number -->
-			<label for="age">Age: </label>
-			<input type="number" name="age" placeholder="30">
+			<label id="number-label" for="age">Age: </label>
+			<input id="number" type="number" name="age" placeholder="30" min="5" max="120">
 			<br>
 		</div>
 
 		<div>
 			<!-- dropdown -->
-			<label for="hours">How many hours a week do you read?</label>
-			<select name="hours">
+			<label id="dropdown-label" for="hours">How many hours a week do you read?</label>
+			<select id="dropdown" name="hours">
 				<option value="">Please choose one</option>
 				<option value="0-1">Less than 1 hour</option>
-				<option value="2-5">2-4 hours</option>
+				<option value="2-5">2-5 hours</option>
 				<option value="6-10">6-10 hours</option>
 				<option value="10+">More than 10 hours</option>
 			</select>
@@ -37,10 +37,10 @@
 		<div>
 			<!-- radio -->
 			<label for="gender">What gender do you identify with?</label><br>
-			<input type="radio" name="gender"> female <br>
-			<input type="radio" name="gender"> male <br>
-			<input type="radio" name="gender"> other <br>
-			<input type="radio" name="gender"> prefer not to say
+			<input type="radio" name="gender" value="female">female<br>
+			<input type="radio" name="gender" value="male">male<br>
+			<input type="radio" name="gender" value="other">other<br>
+			<input type="radio" name="gender" value="na">prefer not to say
 		</div>
 
 		<div>
@@ -61,7 +61,7 @@
 		</div>
 
 		<!-- submit -->
-		<input type="submit" name="submit">
+		<input id="submit" type="submit" name="submit">
 	</form>
 
 </body>
