@@ -2,67 +2,74 @@
 <html>
 <head>
 	<title>Reading Survey</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1 id="title">Reading Survey</h1>
-	<p id="description">Please share a little about your reading preferences.</p>
-	<form id="survey-form">
-		<div>
-			<!-- name -->
-			<label id="name-label" for="name">Name: </label>
-			<input id="name" type="text" name="name" placeholder="Jane" required>
-			<br>
-			<!-- email -->
-			<label id="email-label" for="email">Email: </label>
-			<input id="email" type="email" name="email" placeholder="jane@example.com" required>
-			<br>
-			<!-- age/number -->
-			<label id="number-label" for="age">Age: </label>
-			<input id="number" type="number" name="age" placeholder="30" min="5" max="120">
-			<br>
+	<div class="layer">
+		<div id=main>
+			<h1 id="title">Reading Survey</h1>
+			<p id="description">Please share a little about your reading preferences.</p>
+			<form id="survey-form">
+				<div class=short-text>
+					<!-- name -->
+					<label id="name-label" for="name">Name: </label>
+					<input id="name" type="text" name="name" placeholder="Jane" required>
+				</div>
+				<div class="short-text">
+					<!-- email -->
+					<label id="email-label" for="email">Email: </label>
+					<input id="email" type="email" name="email" placeholder="jane@example.com" required>
+				</div>
+				<div class="short-text">
+					<!-- age/number -->
+					<label id="number-label" for="age">Age: </label>
+					<input id="number" type="number" name="age" placeholder="30" min="5" max="120">
+				</div>
+
+				<div>
+					<!-- dropdown -->
+					<label id="dropdown-label" for="hours">How many hours a week do you read?</label><br>
+					<select id="dropdown" name="hours">
+						<option value="">Please choose one</option>
+						<option value="0-1">Less than 1 hour</option>
+						<option value="2-5">2-5 hours</option>
+						<option value="6-10">6-10 hours</option>
+						<option value="10+">More than 10 hours</option>
+					</select>
+				</div>
+
+				<div>
+					<!-- radio -->
+					<label for="gender">What gender do you identify with?</label><br>
+					<input type="radio" name="gender" value="female">female<br>
+					<input type="radio" name="gender" value="male">male<br>
+					<input type="radio" name="gender" value="other">other<br>
+					<input type="radio" name="gender" value="na">prefer not to say
+				</div>
+
+				<div>
+					<!-- checkbox -->
+					<label>What genres do you like to read?</label><br>
+					<input type="checkbox" name="genre1" value="fiction"> Fiction<br>
+					<input type="checkbox" name="genre2" value="self-help"> Self Help<br>
+					<input type="checkbox" name="genre3" value="history"> History<br>
+					<input type="checkbox" name="genre4" value="graphic-novel"> Graphic Novels<br>
+					<input type="checkbox" name="genre5" value="children's"> Children's Books<br>
+				</div>
+
+				<div>
+				<!-- textarea -->
+					<label for="comments">Do you have any other comments?</label>
+					<br>
+					<textarea id="comments" rows="4" cols="50"></textarea>
+				</div>
+				<div id="submit-div">
+				<!-- submit -->
+					<input id="submit" type="submit" name="submit">
+				</div>
+			</form>
 		</div>
-
-		<div>
-			<!-- dropdown -->
-			<label id="dropdown-label" for="hours">How many hours a week do you read?</label>
-			<select id="dropdown" name="hours">
-				<option value="">Please choose one</option>
-				<option value="0-1">Less than 1 hour</option>
-				<option value="2-5">2-5 hours</option>
-				<option value="6-10">6-10 hours</option>
-				<option value="10+">More than 10 hours</option>
-			</select>
-		</div>
-
-		<div>
-			<!-- radio -->
-			<label for="gender">What gender do you identify with?</label><br>
-			<input type="radio" name="gender" value="female">female<br>
-			<input type="radio" name="gender" value="male">male<br>
-			<input type="radio" name="gender" value="other">other<br>
-			<input type="radio" name="gender" value="na">prefer not to say
-		</div>
-
-		<div>
-			<!-- checkbox -->
-			<label>What genres do you like to read?</label><br>
-			<input type="checkbox" name="genre1" value="fiction"> Fiction<br>
-			<input type="checkbox" name="genre2" value="self-help"> Self Help<br>
-			<input type="checkbox" name="genre3" value="history"> History<br>
-			<input type="checkbox" name="genre4" value="graphic-novel"> Graphic Novels<br>
-			<input type="checkbox" name="genre5" value="children's"> Children's Books<br>
-		</div>
-
-		<div>
-		<!-- textarea -->
-			<label for="comments">Do you have any other comments?</label>
-			<br>
-			<textarea id="comments" rows="4" cols="50"></textarea>
-		</div>
-
-		<!-- submit -->
-		<input id="submit" type="submit" name="submit">
-	</form>
-
+	</div>
 </body>
 </html>
