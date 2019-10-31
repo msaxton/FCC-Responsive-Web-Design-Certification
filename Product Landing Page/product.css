@@ -1,0 +1,87 @@
+body {
+	width: 80%;
+	margin: auto;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+@media(max-width: 500px){
+	p {
+		font-size: 10px;
+	}
+}
+
+header {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 80%;
+	height: 75px;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+form {
+	height: 300px;
+	color: #fff;
+	background-color: #bf5529;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+.nav-link {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #46166b;
+	text-transform: uppercase;
+}
+
+.service {
+	width: 30%;
+	padding: 15px;
+	border: 2px solid #46166b;
+	border-radius: 5%
+}
+
+#title-image {
+	height: 500px;
+	background-image: url("https://images.unsplash.com/photo-1556557598-84d97035e37c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	text-align: center;
+}
+
+#title-text {
+	padding-top: 200px;
+}
+
+#about-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+#description {
+	margin-top: 0px;
+	padding-top: 15px;
+	height: 315px;
+	width: 60%;}
+
+#services-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+#submit {
+	width: 75px;
+	align-self: center;
+}

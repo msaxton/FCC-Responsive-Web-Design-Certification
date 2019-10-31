@@ -2,29 +2,34 @@
 <html>
 <head>
 	<title>Iliff AI Institute</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" type="text/css" href="product.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div>
-			
-		</div>
-		<nav>
-			
-		</nav>
+	<header id="header">
+		<img id="header-img" src="https://ai.iliff.edu/wp-content/uploads/2019/08/33D588E2-8C9C-4FC9-887F-BA23B920B31B-e1565110304950.jpeg">
+		<nav id="nav-bar">
+			<a href="#about" class="nav-link">About</a>
+			<a href="#services" class="nav-link">Services</a>
+			<a href="#contact" class="nav-link">Contact Us</a>
+		</nav>	
 	</header>
 	<main>
 		<div id="title-image">
-			<h1>ai.iliff</h1>
-			<h3>Building a trust-based AI ecosystem</h3>
+			<div id="title-text">
+				<h1 id="title">ai.iliff</h1>
+				<h3>Building a trust-based AI ecosystem</h3>
+			</div>	
 		</div>
-		<div id="about">
+		<div id="about" name="about">
 			<h2>Who we are</h2>
 			<div id="about-section">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Orci phasellus egestas tellus rutrum. Diam sollicitudin tempor id eu nisl. Arcu risus quis varius quam quisque id. Tellus id interdum velit laoreet id donec ultrices tincidunt. Sit amet luctus venenatis lectus. Lacus sed turpis tincidunt id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. In ornare quam viverra orci sagittis eu volutpat. Nisl suscipit adipiscing bibendum est ultricies integer quis. Elit sed vulputate mi sit amet mauris commodo quis. Eget mauris pharetra et ultrices.</p>
+				<p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Orci phasellus egestas tellus rutrum. Diam sollicitudin tempor id eu nisl. Arcu risus quis varius quam quisque id. Tellus id interdum velit laoreet id donec ultrices tincidunt. Sit amet luctus venenatis lectus. Lacus sed turpis tincidunt id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. In ornare quam viverra orci sagittis eu volutpat. Nisl suscipit adipiscing bibendum est ultricies integer quis. Elit sed vulputate mi sit amet mauris commodo quis. Eget mauris pharetra et ultrices.</p>
 				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HrJm1mMbbCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div id="services">
+		<div id="services" name="services">
 			<h2>What we do</h2>
 			<div id="services-section">
 				<div id="events" class=service>
@@ -41,17 +46,18 @@
 				</div>
 			</div>
 		</div>
-		<div id="contact">
-			<form>
+		<div id="contact" name="contact">
+			<h2>Get in touch</h2>
+			<form id="form">
 				<label for="name">Name:</label>
-				<input type="text" name="name">
+				<input type="text" name="name" placeholder="Jane Doe">
 				<label for ="email">Email:</label>
-				<input type="email" name="email">
+				<input id="email" type="email" name="email" placeholder="jdoe@example.com">
 				<label for="subject">Subject:</label>
 				<input type="text" name="subject">
 				<label for="message">Message:</label>
 				<input type="text" name="message">
-				<input type="submit" name="submit">
+				<input id="submit" type="submit" name="submit">
 			</form>
 		</div>
 	</main>
