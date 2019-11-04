@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Candal|News+Cycle:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- navbar -->
+	<div id="nav-container">
+		<nav id="navbar">
+			<ul id="nav-list">
+				<a id="nav-item" href="#welcome-section">About</a>
+				<a id="nav-item" href="#projects">Projects</a>
+				<a id="nav-item" href="#contact">Contact</a>
+			</ul>	
+		</nav>
+	</div>
+	<!-- main section -->
+	<main>
+		<section id="welcome-section">
+			<h1>Hi, I'm Micah.</h1>
+			<p id="welcome-text">Academics + Libraries + Code</p>
+		</section>
+
+		<!-- projects -->
+		<section id="projects">
+			<header>Recent Projects</header>
+			<div id=projects-container>
+
+			<!-- project one -->
+				<div class="project-tile">
+					<img class="project-image" src="./images/d3_heatmap.png">
+					<div class="project-info">
+						<h2 class="project-title"><a href="https://codepen.io/msaxton/full/XWrdypr">D3.js Heat Map</a></h2>
+						<p class="project-description">In this project I use D3.js to build a heat map visualizing global temperatures over the past 250 years.</p>
+					</div>
+				</div>
+
+			<!-- project two -->
+				<div class="project-tile">
+					<img class="project-image" src="./images/d3_choropleth.png">
+					<div class="project-info">
+						<h2 class="project-title"><a href="https://codepen.io/msaxton/full/JjPLQPv">D3.js Choropleth Map</a></h2>
+						<p class="project-description">Choropleth maps are useful for displaying data related to geographic boundaries. Here I use D3.js to build a choropleth map visualizing education levels in the United States by county.</p>
+					</div>
+				</div>
+
+				<!-- project three -->
+				<div class="project-tile">
+					<img class="project-image" src="./images/product.png">
+					<div class="project-info">
+						<h2 class="project-title"><a href="https://codepen.io/msaxton/full/bGGojxE">Product Landing Page</a></h2>
+						<p class="project-description">Products and services need progessional representation on the web in order to reach an audience. Here I build a (mock) responsive web page for the Iliff AI institute.</p>
+					</div>
+				</div>
+
+				<!-- project four -->
+				<div class="project-tile">
+					<img class="project-image" src="./images/tm.png">
+					<div class="project-info">
+						<h2 class="project-title"><a href="https://github.com/iliff/jstor-topic-model">JSTOR Topic Model</a></h2>
+						<p class="project-description">This Python module provides a simplified interface for researchers to move from a JSTOR ngram dataset to a topic model and a visualization of that topic model.</p>
+					</div>
+				</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact">
+			<header>Let's Work Together!</header>
+			<form>
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<label for="name">Name:</label>
+				<input type="text" name="name">
+				<label for ="email">Email:</label>
+				<input id="email" type="email" name="email">
+				<label for="subject">Subject:</label>
+				<input type="text" name="subject">
+				<label for="message">Message:</label>
+				<input type="text" name="message">
+				<input id="submit" type="submit" name="submit">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
